@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function t1(){
+            let i =0;
+            function t2(){
+                return i++;
+            }
+            return t2
+        }
+
+        let t = t1();
+        alert(t());
+        alert(t());
+        alert(t());
+    </script>
+</body>
+</html>
